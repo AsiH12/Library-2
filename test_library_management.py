@@ -63,3 +63,6 @@ def test_return_book(setup_test_environment, monkeypatch, capsys):
     assert len(loans_dal.loans) == 0
     captured = capsys.readouterr()
     assert "Book returned successfully" in captured.out
+
+
+# to test type in the terminal: pytest test_library_management.py
